@@ -32,12 +32,22 @@ anakins.jedi_boost()
 anakins.get_race_status()
 sebulbas.flame_jet(anakins)
 anakins.get_race_status()
+anakins.repair()
+anakins.get_race_status()
 
 """How does this solution demonstrate the four pillars of OOP? (It may not demonstrate all of them, describe only those that apply)
-Encapsulation
-Abstraction
-Inheritance
-Polymorphism
+
+Encapsulation- it keeps max speed condition etc in the base class and extende classes use those class attributes.
+
+Abstraction - abstracts away methods for indicating repair and setting initial values.
+
+Inheritance - each pod inherates the condition and other aspects of the pod parent.
+
+Polymorphism - you can call the repair method on any decendent of pod.
+
 Would it have been easier to implement a solution to this problem using a different coding style? Why or why not?
+    This is appropriate use of OOP because each pod is an individual that decends from a base class that has built-in functionality.
+
 How in particular did Object Oriented Programming assist in the solving of this problem?
+    see above --- using OOP you can create many additional pods without reinventing you code. 
 """
